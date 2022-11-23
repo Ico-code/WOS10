@@ -1,0 +1,45 @@
+<form [formGroup]="userForm">
+  <fieldset class="bg-primary p-4">
+    <legend>User:</legend>
+    <div class="d-flex flex-column">
+      <label for="name">Name</label>
+      <input type="text" formControlName="name">
+    </div>
+    <div class="d-flex flex-column">
+      <label for="lastname">Last Name</label>
+      <input type="text" formControlName="lastname">
+    </div>
+    <div class="d-flex flex-column">
+      <label for="email">Email</label>
+      <input type="textarea" formControlName="email">
+    </div>
+    <div class="d-flex flex-column">
+      <label for="age">Age</label>
+      <input type="number" formControlName="age">
+    </div>
+    <div class="d-flex flex-column">
+      <label for="favoriteColor">Favorite Color</label>
+      <input type="text" formControlName="favoriteColor">
+    </div>
+    <div class="d-flex flex-column bg-dark p-2 my-2">
+      <div class="d-flex flex-row text-center">
+        <label for="Javascript">Javascript</label>
+        <input class="m-2" type="radio" formControlName="favoriteProgrammingLanguage" value="Javascript">
+      </div>
+      <div class="d-flex flex-row text-center">
+        <label for="C++">C++</label>
+        <input class="m-2" type="radio" formControlName="favoriteProgrammingLanguage" value="C++">
+        </div>
+      <div class="d-flex flex-row text-center">
+        <label for="Python">Python</label>
+        <input class="m-2" type="radio" formControlName="favoriteProgrammingLanguage" value="Python">
+        </div>
+    </div>
+    <div class="d-flex flex-row text-center">
+      <label for="newsletter"> Sign up for a newsletter</label>
+      <input class="m-2" type="checkbox" formControlName="orderedNewsLetter">
+    </div>
+    <button class="text-black" type="submit" (click)="addNewUser(userForm)">Submit</button>
+
+  </fieldset>
+</form>

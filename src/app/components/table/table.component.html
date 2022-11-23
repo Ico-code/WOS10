@@ -1,0 +1,19 @@
+<table class="bg-primary p-4" style="width:100%">
+  <tr>
+    <th colspan="2" style="width:20%">Name</th>
+    <th style="width:10%">Age</th>
+    <th style="width:40%">Email</th>
+    <th style="width:10%">Favorite color</th>
+    <th style="width:10%">Favorite Programming language</th>
+    <th style="width:10%">Ordered newspaper</th>
+  </tr>
+  <tr *ngFor="let user of userlist">
+    <td>{{user.name}}</td>
+    <td>{{user.lastname}}</td>
+    <td>{{user.age}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.favoriteColor}}</td>
+    <td>{{user.favoriteProgrammingLanguage}}</td>
+    <td>{{user.orderedNewsLetter}}</td>
+  </tr>
+</table>
